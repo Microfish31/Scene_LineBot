@@ -1,0 +1,95 @@
+{
+  "size": {
+    "width": 1250,
+    "height": 838
+  },
+  "selected": true,
+  "name": "圖文選單 1",
+  "chatBarText": "查看更多資訊",
+  "areas": [
+    {
+      "bounds": {
+        "x": 47,
+        "y": 41,
+        "width": 367,
+        "height": 376
+      },
+      "action": {
+        "type": "message",
+        "text": "我的偏好"
+      }
+    },
+    {
+      "bounds": {
+        "x": 46,
+        "y": 438,
+        "width": 371,
+        "height": 378
+      },
+      "action": {
+        "type": "message",
+        "text": "歷史紀錄"
+      }
+    },
+    {
+      "bounds": {
+        "x": 441,
+        "y": 46,
+        "width": 375,
+        "height": 773
+      },
+      "action": {
+        "type": "message",
+        "text": "我想去旅行"
+      }
+    },
+    {
+      "bounds": {
+        "x": 842,
+        "y": 37,
+        "width": 369,
+        "height": 245
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://tw.yahoo.com/"
+      }
+    },
+    {
+      "bounds": {
+        "x": 840,
+        "y": 300,
+        "width": 371,
+        "height": 242
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://tw.yahoo.com/"
+      }
+    },
+    {
+      "bounds": {
+        "x": 846,
+        "y": 561,
+        "width": 365,
+        "height": 245
+      },
+      "action": {
+        "type": "message",
+        "text": "聯絡我們"
+      }
+    },
+    {
+      "bounds": {
+        "x": 430,
+        "y": 27,
+        "width": 2,
+        "height": 2
+      },
+      "action": {
+        "type": "message",
+        "text": "範圍 7"
+      }
+    }
+  ]
+}
