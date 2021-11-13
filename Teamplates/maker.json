@@ -52,7 +52,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "我的 FB "
+                        "text": "我的 Github "
                     }
                 ]
             }
@@ -67,7 +67,7 @@
                 "action": {
                     "type": "uri",
                     "label": "Website",
-                    "uri": "https://www.facebook.com/profile.php?id=100005329513318"
+                    "uri": "https://github.com/Microfish31?tab=repositories"
                 }
             }
         ]
