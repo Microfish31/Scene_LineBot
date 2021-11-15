@@ -5,7 +5,10 @@ import requests
 import json
 # 底線暫時不用理會
 import Setting.parameter as parameter
+import Module.postgresql as postgresql
 
+global PostgresDB
+Setting_Dir_Name = "Setting"
 Teamplates_Dirname = "Teamplates"
 
 #type "message","json"
@@ -71,3 +74,26 @@ def FindRichMenusId(headers) :
 def EnableRichMenu(Id,headers) :
     req = requests.request('POST', "https://api.line.me/v2/bot/user/all/richmenu/" + Id,headers=headers)
     return req.text
+
+def DBInI() :
+    settings_path = Setting_Dir_Name + "//" + "settings.json"
+
+    with open(settings_path,'r') as f:
+        setting_dict =  json.load(f)
+
+    PostgresDB = postgresql.PostgresDB(
+        setting_dict["DbName"],
+        setting_dict["DbUser"],
+        setting_dict["DbPassword"],
+        setting_dict["DbHost"],
+        setting_dict["DbPort"]
+    )
+
+    # 上線後不與資料庫斷線?
+    PostgresDB.ConnectToDB()
+
+
+
+    
+
+    

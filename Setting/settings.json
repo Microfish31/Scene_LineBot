@@ -1,5 +1,10 @@
 {
-    "channel_access_token":"",
+    "channel_access_token": "",
     "channel_secret":"",
-    "RichMenuFlag": "0"
+    "RichMenuFlag": "0",
+    "DbName" : "",
+    "DbUser" : "",
+    "DbPassword": "",
+    "DbHost" : "",
+    "DbPort" : ""
 }

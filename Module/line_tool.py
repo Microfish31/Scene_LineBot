@@ -18,8 +18,8 @@ def LineBotSet() :
     author_key = setting_dict["channel_access_token"]
     line_bot_api = LineBotApi(author_key)
     handler = WebhookHandler(setting_dict["channel_secret"])
-
-
+    
+    # RichMenu
     if setting_dict["RichMenuFlag"] == '0' :
         # Rich Menu
         headers = {"Authorization":"Bearer " + author_key,"Content-Type":"application/json"}

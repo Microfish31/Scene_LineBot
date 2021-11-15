@@ -5,4 +5,5 @@ flask
 bs4
 requests
 imgurpython
+psycopg2
 gunicorn

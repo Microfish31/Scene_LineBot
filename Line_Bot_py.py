@@ -10,7 +10,6 @@ from flask import Flask, request, abort
 from linebot.exceptions import InvalidSignatureError
 #...........................................................................................
 App = Flask(__name__)
-global handler
 handler,line_bot_api = line_tool.LineBotSet()
 #...........................................................................................
 
@@ -89,4 +88,5 @@ def ImageEcho(event):
     line_bot_api.reply_message(event.reply_token,line_tool.ImageSendMessage(original_content_url= url_a, preview_image_url= url_a))
 
 if __name__ == "__main__":
+    #doaction.DBInI()
     App.run()

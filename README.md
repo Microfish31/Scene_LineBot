@@ -1,6 +1,2 @@
-# Scene_LineBot
-## 說明
-
-寫一個 Line Bot 架構參考。
-
-目前撰寫的目標是完成一個景點情況詢問機器人。可以考慮天氣、人流、交通等等因素。
+# SceneLineBot
+SceneLineBot
