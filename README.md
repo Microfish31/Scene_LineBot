@@ -11,14 +11,14 @@ Python
 Visual Studio Code
 
 ## UI 工具
-Flex Message Simulator
+Flex Message Simulator  
 LineBot Designer
 
 ## 資料庫
 Postgresql
 
 ## 免費託管平台
-repl.it
+repl.it  
 Heroku
 
 # Photo
