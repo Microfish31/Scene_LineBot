@@ -14,13 +14,12 @@ Visual Studio Code
 Flex Message Simulator  
 LineBot Designer
 
-## 資料庫
-Postgresql  
+## 資料庫 
 <img src="https://d1dwq032kyr03c.cloudfront.net/upload/images/20200908/201297986I73Dv2Ocj.png" width="25%"/>
 
 ## 免費託管平台
-repl.it  
-Heroku
+<a href="https://replit.com/" title="Repl.it">Repl.it</a>  
+<a href="https://www.heroku.com/" title="Heroku">Heroku</a>
 
 ## 流程
 <img src="https://github.com/Microfish31/Scene_LineBot/blob/main/Flow_Chart.png" width="80%"/>
