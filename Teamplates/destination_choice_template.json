@@ -1,0 +1,26 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "text": "輸入你想去的目的地名稱",
+          "label": "有明確目的地"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "哪裡可以去",
+          "text": "你想做什麼呢?"
+        }
+      }
+    ],
+    "margin": "none"
+  }
+}

@@ -1,7 +1,5 @@
 line-bot-sdk
 flask
-configparser
-flask
 bs4
 requests
 imgurpython

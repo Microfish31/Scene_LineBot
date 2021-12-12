@@ -66,7 +66,7 @@ def FindFlexMsg(file_name) :
     return FlexMessage
 
 def FindRichMenusId(headers) :
-    file_name = "richmenus_teamplate"
+    file_name = "richmenu"
     rich_menu_data = json.dumps(FindFlexMsg(file_name)).encode('utf-8')
     dictt = json.loads(requests.request('POST', 'https://api.line.me/v2/bot/richmenu',headers=headers,data=rich_menu_data).text)
     return dictt['richMenuId']

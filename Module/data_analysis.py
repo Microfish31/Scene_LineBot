@@ -2,6 +2,7 @@ from math import cos
 from math import sin
 import math
 import json
+import random
 
 Teamplates_Dirname = "Teamplates"
 
@@ -67,4 +68,29 @@ def RenewWeatherTeamplate(location,time,rain_chance,wx,cci,maxt,mint):
     json.dump(data,f)
     f.close()
 
+def RenewSiteTemplate():
+    path = Teamplates_Dirname + "//" + "site_template.json"
+    data =  json.load(open(path,'r'))
+    x=int(random.uniform(100,199))
+    data['body']['contents'][0]['text'] = "九份  測試變數:"+str(x)
+    data['body']['contents'][1]['text'] = "天氣:⛅晴天  測試變數:"+str(x)
+    data['body']['contents'][2]['text'] = "濕度:38%  測試變數:"+str(x)
+    data['body']['contents'][3]['text'] = "人流:75%  測試變數:"+str(x)
+    
+    f = open(path,'w')
+    json.dump(data,f)
+    f.close()
+
+def RenewNearSiteTemplate():
+    path = Teamplates_Dirname + "//" + "site_near_template.json"
+    data =  json.load(open(path,'r'))
+    x=int(random.uniform(100,199))
+    for i in range(3):
+        data['contents'][i]['body']['contents'][0]['text'] = "九份  測試變數:"+str(x)
+        data['contents'][i]['body']['contents'][1]['text'] = "天氣:⛅晴天  測試變數:"+str(x)
+        data['contents'][i]['body']['contents'][2]['text'] = "濕度:38%  測試變數:"+str(x)
+        data['contents'][i]['body']['contents'][3]['text'] = "人流:75%  測試變數:"+str(x)
+    f = open(path,'w')
+    json.dump(data,f)
+    f.close()
     

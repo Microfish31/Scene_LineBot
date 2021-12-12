@@ -26,7 +26,7 @@ def LineBotSet() :
 
         Id = doaction.FindRichMenusId(headers)
 
-        with open(Photo_Dir_Name + "//" + "default_rich_menu.png",'rb') as f:
+        with open(Photo_Dir_Name + "//" + "Richmenu.png",'rb') as f:
             line_bot_api.set_rich_menu_image(Id, "image/png", f)
 
         print(doaction.EnableRichMenu(Id,headers))

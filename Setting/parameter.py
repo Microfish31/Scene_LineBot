@@ -13,7 +13,7 @@ city = {'臺北市': '0', '台北市': '0', '新北市': '1', '桃園市': '2', 
 cwb_auth_key = ""
 
 # imgur
-client_id = ''
-client_secret = ''
+client_id = ""
+client_secret = ""
 access_token = ""
 refresh_token = ""

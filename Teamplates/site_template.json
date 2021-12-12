@@ -1,0 +1,61 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "九份",
+        "size": "xl",
+        "margin": "none",
+        "style": "normal",
+        "decoration": "none",
+        "contents": []
+      },
+      {
+        "type": "text",
+        "text": "天氣:⛅晴天"
+      },
+      {
+        "type": "text",
+        "text": "濕度:30%"
+      },
+      {
+        "type": "text",
+        "text": "人流:75%"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [],
+            "height": "6px",
+            "width": "75%",
+            "margin": "sm",
+            "backgroundColor": "#DE5658",
+            "paddingAll": "12px",
+            "paddingBottom": "16px"
+          },
+          {
+            "type": "filler"
+          }
+        ],
+        "backgroundColor": "#FAD2A76E",
+        "margin": "sm"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "景點故事",
+          "text": "九份是臺灣新北市瑞芳區的一個地區，與基隆山遙望；整個小鎮座落於山坡地上，也因此形成了獨特的山坡和階梯式建築景觀。早期因金礦而興盛，礦坑挖掘殆盡後一度沒落。1990年代後，因電影《悲情城市》在此取景，其獨特的舊式建築、坡地及風情透過該片吸引國內外的注目，也為此地區重新帶來生機，成為觀光景點。"
+        },
+        "margin": "none"
+      }
+    ]
+  }
+}

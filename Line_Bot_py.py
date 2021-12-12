@@ -20,9 +20,7 @@ def callback():
     body = request.get_data(as_text=True)
     App.logger.info("Request body: " + body)
     
-    #print(signature)
     try:
-        #print(body, signature)
         handler.handle(body, signature)
         
     except InvalidSignatureError:
@@ -43,6 +41,14 @@ def RegexResult(work_num,get_str) :
     elif work_num == 1 :   
         txt = "你好呀!"
         return line_tool.TextSendMessage(txt)
+    elif work_num == 2 :   
+        return line_tool.FlexSendMessage('[使用選擇]',doaction.FindFlexMsg('destination_choice_template'))
+    elif work_num == 3 :   
+        data_analysis.RenewSiteTemplate()
+        return line_tool.FlexSendMessage('[景點資訊]',doaction.FindFlexMsg('site_template'))
+    elif work_num == 4 :
+        data_analysis.RenewNearSiteTemplate()   
+        return line_tool.FlexSendMessage('[附近景點資訊]',doaction.FindFlexMsg('site_near_template'))
     return None
 
 # 回應 TextMessage
@@ -50,12 +56,8 @@ def RegexResult(work_num,get_str) :
 def TextEcho(event):
     if event.message.text == "說明":  
         reply_msg = line_tool.TextSendMessage("哈哈，暫時沒有說明。")
-    elif event.message.text == "製作者" :
-        reply_msg = line_tool.FlexSendMessage('[製作者]',doaction.FindFlexMsg('maker'))
-    elif event.message.text == "時間" :
-        reply_msg = line_tool.FlexSendMessage('[時間]',doaction.FindFlexMsg('time-teamplate'))
-    elif event.message.text == "推薦" :
-        reply_msg = line_tool.FlexSendMessage('[推薦]',doaction.FindFlexMsg('recommand_teamplate'))
+    elif event.message.text == "製作團隊" :
+        reply_msg = line_tool.FlexSendMessage('[製作團隊]',doaction.FindFlexMsg('maker'))
     else :
         b = regex.ExistOrNot(event.message.text)
         if b != -1 :
@@ -88,5 +90,4 @@ def ImageEcho(event):
     line_bot_api.reply_message(event.reply_token,line_tool.ImageSendMessage(original_content_url= url_a, preview_image_url= url_a))
 
 if __name__ == "__main__":
-    #doaction.DBInI()
     App.run()
